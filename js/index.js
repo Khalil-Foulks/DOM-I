@@ -150,10 +150,10 @@ firstBottomP = bottomP[0];
 firstBottomP.textContent = siteContent["main-content"]["services-content"];
 
 secondBottomP = bottomP[1];
-secondBottomP.textContent = siteContent["main-content"]["services-content"];
+secondBottomP.textContent = siteContent["main-content"]["product-content"];
 
 thirdBottomP = bottomP[2];
-thirdBottomP.textContent = siteContent["main-content"]["services-content"];
+thirdBottomP.textContent = siteContent["main-content"]["vision-content"];
 
 //-----------------------------------Contact h4----------------------------------------
 
