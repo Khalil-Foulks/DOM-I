@@ -41,15 +41,15 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 //-------------------------------------NAV----------------------------------
-const nav = document.getElementsByTagName('a');
-console.log(nav);
+const navAnchor = document.getElementsByTagName('a');
+console.log(navAnchor);
 
-const firstNav = nav[0];
-const secondNav = nav[1];
-const thirdNav = nav[2];
-const fourthNav = nav[3];
-const fifthNav = nav[4];
-const sixthNav = nav[5];
+const firstNav = navAnchor[0];
+const secondNav = navAnchor[1];
+const thirdNav = navAnchor[2];
+const fourthNav = navAnchor[3];
+const fifthNav = navAnchor[4];
+const sixthNav = navAnchor[5];
 
 firstNav.textContent = siteContent["nav"]["nav-item-1"];
 secondNav.textContent = siteContent["nav"]["nav-item-2"];
@@ -57,6 +57,36 @@ thirdNav.textContent = siteContent["nav"]["nav-item-3"];
 fourthNav.textContent = siteContent["nav"]["nav-item-4"];
 fifthNav.textContent = siteContent["nav"]["nav-item-5"];
 sixthNav.textContent = siteContent["nav"]["nav-item-6"];
+
+//----------------------------------Nav Additions/Changes----------------------------------------
+navQuery = document.querySelectorAll('a');
+navQuery.forEach(item => {
+  item.style.color = 'green';
+});
+
+
+const nav = document.querySelector('nav')
+const navAppend = document.createElement('a');
+
+navAppend.href = '#';
+navAppend.textContent = "Append";
+navAppend.style.color ="red"
+navAppend.style.fontWeight ="bold"
+console.log('Appended',navAppend);
+
+nav.appendChild(navAppend);
+
+const navPrepend = document.createElement('a');
+navPrepend.href= '#';
+navPrepend.textContent = "Prepend";
+navPrepend.style.color = "orange"
+navPrepend.style.fontWeight ="bold"
+console.log('Prepend', navPrepend);
+
+nav.prepend(navPrepend);
+
+
+
 
 //--------------------------------CTA------------------------------------------
 
