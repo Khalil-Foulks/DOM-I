@@ -92,7 +92,7 @@ nav.prepend(navPrepend);
 
 const h1 = document.querySelector('h1');
 console.log(h1);
-h1.textContent = siteContent["cta"]["h1"];
+h1.innerHTML = `DOM <br> Is<br> Awesome`;
 
 const button = document.querySelector('button');
 console.log(button);
