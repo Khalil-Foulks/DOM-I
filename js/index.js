@@ -100,4 +100,26 @@ secondBottomH4.textContent = siteContent["main-content"]["product-h4"];
 thirdBottomH4 = bottomH4[2];
 thirdBottomH4.textContent = siteContent["main-content"]["vision-h4"];
 
+//--------------------------------------------------------------------------
+const topP = document.querySelectorAll('.top-content .text-content p');
+console.log("top paragraph", topP);
 
+firstTopP= topP[0];
+firstTopP.textContent = siteContent["main-content"]["features-content"];
+
+secondTopP = topP[1];
+secondTopP.textContent = siteContent["main-content"]["about-content"];
+
+//---------------------------------------------------------------------------
+
+bottomP = document.querySelectorAll('.bottom-content .text-content p');
+console.log("bottom paragraph", bottomP);
+
+firstBottomP = bottomP[0];
+firstBottomP.textContent = siteContent["main-content"]["services-content"];
+
+secondBottomP = bottomP[1];
+secondBottomP.textContent = siteContent["main-content"]["services-content"];
+
+thirdBottomP = bottomP[2];
+thirdBottomP.textContent = siteContent["main-content"]["services-content"];
