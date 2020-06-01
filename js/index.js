@@ -40,6 +40,7 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+//--------------------------------------------------------------------------
 
 const nav = document.getElementsByTagName('a');
 console.log(nav);
@@ -58,6 +59,7 @@ fourthNav.textContent = siteContent["nav"]["nav-item-4"];
 fifthNav.textContent = siteContent["nav"]["nav-item-5"];
 sixthNav.textContent = siteContent["nav"]["nav-item-6"];
 
+//--------------------------------------------------------------------------
 
 const h1 = document.querySelector('h1');
 console.log(h1);
@@ -65,5 +67,37 @@ h1.textContent = siteContent["cta"]["h1"];
 
 const button = document.querySelector('button');
 console.log(button);
-button.textContent = siteContent["cta"]["button"]
+button.textContent = siteContent["cta"]["button"];
+
+//------------------------------------------------------------------
+const topH4 = document.querySelectorAll('.top-content .text-content h4');
+console.log("top h4",topH4);
+
+firstTopH4 = topH4[0];
+firstTopH4.textContent = siteContent["main-content"]["features-h4"];
+
+secondTopH4 = topH4[1];
+secondTopH4.textContent = siteContent["main-content"]["about-h4"];
+
+//--------------------------------------------------------------------------
+const ctaImg = document.querySelector('.main-content img');
+console.log(ctaImg)
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+
+//---------------------------------------------------------------------------
+const bottomH4 = document.querySelectorAll('.bottom-content .text-content h4');
+console.log("bottom h4", bottomH4);
+
+firstBottomH4 = bottomH4[0];
+firstBottomH4.textContent = siteContent["main-content"]["services-h4"];
+
+
+secondBottomH4 = bottomH4[1];
+secondBottomH4.textContent = siteContent["main-content"]["product-h4"];
+
+
+thirdBottomH4 = bottomH4[2];
+thirdBottomH4.textContent = siteContent["main-content"]["vision-h4"];
+
 
