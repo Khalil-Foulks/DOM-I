@@ -40,3 +40,146 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+//-------------------------------------NAV----------------------------------
+const navAnchor = document.getElementsByTagName('a');
+console.log(navAnchor);
+
+const firstNav = navAnchor[0];
+const secondNav = navAnchor[1];
+const thirdNav = navAnchor[2];
+const fourthNav = navAnchor[3];
+const fifthNav = navAnchor[4];
+const sixthNav = navAnchor[5];
+
+firstNav.textContent = siteContent["nav"]["nav-item-1"];
+secondNav.textContent = siteContent["nav"]["nav-item-2"];
+thirdNav.textContent = siteContent["nav"]["nav-item-3"];
+fourthNav.textContent = siteContent["nav"]["nav-item-4"];
+fifthNav.textContent = siteContent["nav"]["nav-item-5"];
+sixthNav.textContent = siteContent["nav"]["nav-item-6"];
+
+//----------------------------------Nav Additions/Changes----------------------------------------
+navQuery = document.querySelectorAll('a');
+navQuery.forEach(item => {
+  item.style.color = 'green';
+});
+
+
+const nav = document.querySelector('nav')
+const navAppend = document.createElement('a');
+
+navAppend.href = '#';
+navAppend.textContent = "Append";
+navAppend.style.color ="red"
+navAppend.style.fontWeight ="bold"
+console.log('Appended',navAppend);
+
+nav.appendChild(navAppend);
+
+const navPrepend = document.createElement('a');
+navPrepend.href= '#';
+navPrepend.textContent = "Prepend";
+navPrepend.style.color = "orange"
+navPrepend.style.fontWeight ="bold"
+console.log('Prepend', navPrepend);
+
+nav.prepend(navPrepend);
+
+
+
+
+//--------------------------------CTA------------------------------------------
+
+const h1 = document.querySelector('h1');
+console.log(h1);
+h1.innerHTML = `DOM <br> Is<br> Awesome`;
+
+const button = document.querySelector('button');
+console.log(button);
+button.textContent = siteContent["cta"]["button"];
+
+const ctaImg = document.querySelector('.cta img');
+console.log(ctaImg)
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+//---------------------------------Top h4---------------------------------
+const topH4 = document.querySelectorAll('.top-content .text-content h4');
+console.log("top h4",topH4);
+
+firstTopH4 = topH4[0];
+firstTopH4.textContent = siteContent["main-content"]["features-h4"];
+
+secondTopH4 = topH4[1];
+secondTopH4.textContent = siteContent["main-content"]["about-h4"];
+
+//--------------------------------Bottom h4-------------------------------------------
+const bottomH4 = document.querySelectorAll('.bottom-content .text-content h4');
+console.log("bottom h4", bottomH4);
+
+firstBottomH4 = bottomH4[0];
+firstBottomH4.textContent = siteContent["main-content"]["services-h4"];
+
+
+secondBottomH4 = bottomH4[1];
+secondBottomH4.textContent = siteContent["main-content"]["product-h4"];
+
+
+thirdBottomH4 = bottomH4[2];
+thirdBottomH4.textContent = siteContent["main-content"]["vision-h4"];
+//--------------------------------------------------------------------------
+const midImg = document.getElementById('middle-img');
+midImg.setAttribute('src', 'img/mid-page-accent.jpg');
+
+
+//---------------------------------Top p-----------------------------------------
+const topP = document.querySelectorAll('.top-content .text-content p');
+console.log("top paragraph", topP);
+
+firstTopP= topP[0];
+firstTopP.textContent = siteContent["main-content"]["features-content"];
+
+secondTopP = topP[1];
+secondTopP.textContent = siteContent["main-content"]["about-content"];
+
+//--------------------------------Bottom p-------------------------------------------
+
+bottomP = document.querySelectorAll('.bottom-content .text-content p');
+console.log("bottom paragraph", bottomP);
+
+firstBottomP = bottomP[0];
+firstBottomP.textContent = siteContent["main-content"]["services-content"];
+
+secondBottomP = bottomP[1];
+secondBottomP.textContent = siteContent["main-content"]["product-content"];
+
+thirdBottomP = bottomP[2];
+thirdBottomP.textContent = siteContent["main-content"]["vision-content"];
+
+//-----------------------------------Contact h4----------------------------------------
+
+contactH4 = document.querySelector('.contact h4');
+console.log(contactH4);
+
+contactH4.textContent = siteContent["contact"]["contact-h4"];
+
+
+
+//----------------------------------Contact p--------------------------------------
+contactP = document.querySelectorAll('.contact p');
+console.log(contactP);
+
+firstcontactP = contactP[0];
+firstcontactP.textContent = siteContent["contact"]["address"];
+
+secondcontactP = contactP[1];
+secondcontactP.textContent =siteContent["contact"]["phone"]
+
+
+thirdcontactP = contactP[2];
+thirdcontactP.textContent =siteContent["contact"]["email"]
+
+//-----------------------------------Footer----------------------------------------
+footer = document.querySelector('footer p');
+console.log(footer);
+
+footer.textContent = siteContent["footer"]["copyright"];
