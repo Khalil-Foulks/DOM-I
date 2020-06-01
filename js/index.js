@@ -40,8 +40,7 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
-//--------------------------------------------------------------------------
-
+//-------------------------------------NAV----------------------------------
 const nav = document.getElementsByTagName('a');
 console.log(nav);
 
@@ -59,7 +58,7 @@ fourthNav.textContent = siteContent["nav"]["nav-item-4"];
 fifthNav.textContent = siteContent["nav"]["nav-item-5"];
 sixthNav.textContent = siteContent["nav"]["nav-item-6"];
 
-//--------------------------------------------------------------------------
+//--------------------------------CTA------------------------------------------
 
 const h1 = document.querySelector('h1');
 console.log(h1);
@@ -69,7 +68,11 @@ const button = document.querySelector('button');
 console.log(button);
 button.textContent = siteContent["cta"]["button"];
 
-//------------------------------------------------------------------
+const ctaImg = document.querySelector('.cta img');
+console.log(ctaImg)
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+//---------------------------------Top h4---------------------------------
 const topH4 = document.querySelectorAll('.top-content .text-content h4');
 console.log("top h4",topH4);
 
@@ -79,13 +82,7 @@ firstTopH4.textContent = siteContent["main-content"]["features-h4"];
 secondTopH4 = topH4[1];
 secondTopH4.textContent = siteContent["main-content"]["about-h4"];
 
-//--------------------------------------------------------------------------
-const ctaImg = document.querySelector('.main-content img');
-console.log(ctaImg)
-ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
-
-
-//---------------------------------------------------------------------------
+//--------------------------------Bottom h4-------------------------------------------
 const bottomH4 = document.querySelectorAll('.bottom-content .text-content h4');
 console.log("bottom h4", bottomH4);
 
@@ -99,8 +96,12 @@ secondBottomH4.textContent = siteContent["main-content"]["product-h4"];
 
 thirdBottomH4 = bottomH4[2];
 thirdBottomH4.textContent = siteContent["main-content"]["vision-h4"];
-
 //--------------------------------------------------------------------------
+const midImg = document.getElementById('middle-img');
+midImg.setAttribute('src', 'img/mid-page-accent.jpg');
+
+
+//---------------------------------Top p-----------------------------------------
 const topP = document.querySelectorAll('.top-content .text-content p');
 console.log("top paragraph", topP);
 
@@ -110,7 +111,7 @@ firstTopP.textContent = siteContent["main-content"]["features-content"];
 secondTopP = topP[1];
 secondTopP.textContent = siteContent["main-content"]["about-content"];
 
-//---------------------------------------------------------------------------
+//--------------------------------Bottom p-------------------------------------------
 
 bottomP = document.querySelectorAll('.bottom-content .text-content p');
 console.log("bottom paragraph", bottomP);
@@ -124,7 +125,7 @@ secondBottomP.textContent = siteContent["main-content"]["services-content"];
 thirdBottomP = bottomP[2];
 thirdBottomP.textContent = siteContent["main-content"]["services-content"];
 
-//---------------------------------------------------------------------------
+//-----------------------------------Contact h4----------------------------------------
 
 contactH4 = document.querySelector('.contact h4');
 console.log(contactH4);
@@ -133,7 +134,7 @@ contactH4.textContent = siteContent["contact"]["contact-h4"];
 
 
 
-//------------------------------------------------------------------------
+//----------------------------------Contact p--------------------------------------
 contactP = document.querySelectorAll('.contact p');
 console.log(contactP);
 
@@ -147,7 +148,7 @@ secondcontactP.textContent =siteContent["contact"]["phone"]
 thirdcontactP = contactP[2];
 thirdcontactP.textContent =siteContent["contact"]["email"]
 
-//---------------------------------------------------------------------------
+//-----------------------------------Footer----------------------------------------
 footer = document.querySelector('footer p');
 console.log(footer);
 
