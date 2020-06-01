@@ -59,7 +59,11 @@ fifthNav.textContent = siteContent["nav"]["nav-item-5"];
 sixthNav.textContent = siteContent["nav"]["nav-item-6"];
 
 
-// const h1 = document.getElementsByTagName('h1');
-// console.log(h1)
-// h1.textContent = siteContent["cta"]["h1"];
+const h1 = document.querySelector('h1');
+console.log(h1);
+h1.textContent = siteContent["cta"]["h1"];
+
+const button = document.querySelector('button');
+console.log(button);
+button.textContent = siteContent["cta"]["button"]
 
