@@ -123,3 +123,32 @@ secondBottomP.textContent = siteContent["main-content"]["services-content"];
 
 thirdBottomP = bottomP[2];
 thirdBottomP.textContent = siteContent["main-content"]["services-content"];
+
+//---------------------------------------------------------------------------
+
+contactH4 = document.querySelector('.contact h4');
+console.log(contactH4);
+
+contactH4.textContent = siteContent["contact"]["contact-h4"];
+
+
+
+//------------------------------------------------------------------------
+contactP = document.querySelectorAll('.contact p');
+console.log(contactP);
+
+firstcontactP = contactP[0];
+firstcontactP.textContent = siteContent["contact"]["address"];
+
+secondcontactP = contactP[1];
+secondcontactP.textContent =siteContent["contact"]["phone"]
+
+
+thirdcontactP = contactP[2];
+thirdcontactP.textContent =siteContent["contact"]["email"]
+
+//---------------------------------------------------------------------------
+footer = document.querySelector('footer p');
+console.log(footer);
+
+footer.textContent = siteContent["footer"]["copyright"];
